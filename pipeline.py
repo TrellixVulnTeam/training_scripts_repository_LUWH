@@ -280,7 +280,7 @@ def _get_secrets(params):
         # strをdictに変換して返却
  
         secret = ast.literal_eval(secret)
-        
+        print(secret)
         return secret
 
 def _query_rds(secrets, sql, data):
