@@ -281,7 +281,7 @@ def _get_secrets(params):
  
         secret = ast.literal_eval(secret)
         
-    return secret
+        return secret
 
 def _query_rds(secrets, sql, data):
     passwd = secrets['password']
