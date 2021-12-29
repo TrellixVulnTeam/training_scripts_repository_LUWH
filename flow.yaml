@@ -3,8 +3,8 @@ config:
   job-name-prefix: 'mlops-demo'
   image-name-prefix: 'mlops-demo'
   sfn-workflow-name: 'mlops-demo'
-  sfn-role-arn: 'arn:aws:iam::077921378503:role/StepFunctionsWorkflowExecutionRole-dev'
-  sagemaker-role: 'arn:aws:iam::077921378503:role/service-role/AmazonSageMaker-ExecutionRole-20211119T091068'
+  sfn-role-arn: 'arn:aws:iam::077921378503:role/AmazonSageMaker-StepFunctionsWorkflowExecutionRole'
+  sagemaker-role: 'arn:aws:iam::077921378503:role/service-role/AmazonSageMaker-ExecutionRole-20211110T142496'
   secretsmanager-arn: 'arn:aws:secretsmanager:us-east-1:077921378503:secret:traindevtestMLOpstraindatab-Z9QpCRZcV6tQ-4WOM9y'
   
 preprocess:
