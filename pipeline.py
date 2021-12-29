@@ -312,9 +312,10 @@ def insert_data(params):
     secrets = _get_secrets(params)
     sql = '''INSERT INTO train.pipeline (exec_id, train_job_name, ''' + \
         '''prep_job_name, eval_job_name, trained_model_s3) ''' + \
-        '''VALUES (%s, %s, %s)'''
+        '''VALUES (%s, %s, %s, %s, %s)'''
     data = (os.environ['EXEC_ID'], os.environ['TRAIN_JOB_NAME'], os.environ['PREP_JOB_NAME'], 
         os.environ['EVAL_JOB_NAME'], os.environ['TRAINED_MODEL_S3'])
+
     _query_rds(secrets, sql, data)
 
 
