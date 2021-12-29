@@ -370,6 +370,8 @@ if __name__ == '__main__':
             "EvaluationJobName": eval_job_name,
         }
     )
+    
+    insert_data(params)
 
 #     # SFn の実行に必要な情報を渡す際のスキーマを定義します
 #     schema = {'TrainJobName': str}
