@@ -5,7 +5,7 @@ config:
   sfn-workflow-name: 'mlops-demo'
   sfn-role-arn: 'arn:aws:iam::077921378503:role/AmazonSageMaker-StepFunctionsWorkflowExecutionRole'
   sagemaker-role: 'arn:aws:iam::077921378503:role/service-role/AmazonSageMaker-ExecutionRole-20211110T142496'
-  secretsmanager-arn: 'arn:aws:secretsmanager:us-east-1:077921378503:secret:traindevtestMLOpstraindatab-Z9QpCRZcV6tQ-4WOM9y'
+  secretsmanager-arn: 'arn:aws:secretsmanager:us-east-1:077921378503:secret:traindevtestMLOpstraindatab-NUWrTqYPWYJd-7XU2Q6'
   
 preprocess:
   input-data-path: 's3://sagemaker-us-east-1-077921378503/data/'
